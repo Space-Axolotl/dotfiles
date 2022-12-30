@@ -24,3 +24,16 @@ xdotool xclip scrot brightnessctl alsa-utils pulseaudio jq rofi \
 inotify-tools zsh mpdris2 acpi acpi_call \
 playerctl redshift cutefish-cursor-themes-git cutefish-icons upower xorg xorg-init tar
 ```
+
+
+3.Setup symbolic links
+```
+rm ~/.config/alacritty/alacritty.yml
+ln -s ~/dotfiles/alacritty.yml ~/.config/alacritty/alacritty.yml
+
+rm ~/.config/fish/config.fish
+ln -s ~/dotfiles/config.fish ~/.config/fish/config.fish
+
+rm -rf ~/.config/awesome
+cp ~/dotfiles/awesome ~/.config
+```
