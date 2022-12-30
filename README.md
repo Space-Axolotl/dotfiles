@@ -1,6 +1,11 @@
+# ⚠ DISCLAMER ⚠
+⚠ THIS REP IS STILL WIP SO PLEASE DO NOT FOLLOW STEPS BELOW ⚠
+
+__TOC__
+
 # Dotfiles
 This repository is a colection of dotfiles for arch on desktop 
-# Setup
+## Setup
 0.(multiple screens step) install nvidia tools
 ```
 sudo pacman -S nvidia nvidia-utils nvidia-settings
