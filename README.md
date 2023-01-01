@@ -38,6 +38,9 @@ xdotool xclip scrot brightnessctl alsa-utils pulseaudio jq rofi \
 inotify-tools zsh mpdris2 acpi acpi_call \
 playerctl redshift cutefish-cursor-themes-git cutefish-icons upower xorg xorg-init tar
 ```
+```
+sudo pacman -S pavucontrol pamixer
+```
 
 
 ### 3. Setup symbolic links

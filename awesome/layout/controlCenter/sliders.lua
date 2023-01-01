@@ -78,7 +78,7 @@ end)
 local volume = wibox.widget{
     widget = wibox.widget.slider,
     value = 50,
-    maximum = 100,
+    maximum = 150,
     forced_width = dpi(260)*scalar,
     shape = gears.shape.rounded_bar,
     bar_shape = gears.shape.rounded_bar,
@@ -117,7 +117,7 @@ local volume_init = wibox.widget{
     spacing = dpi(17)*scalar
 }
 
-awful.spawn.easy_async_with_shell("amixer -D pulse get Master | tail -n 1 | awk '{print $5}' | tr -d '[%]'", function (stdout)
+awful.spawn.easy_async_with_shell("pamixer --get-volume", function (stdout)
     local value = string.gsub(stdout, '^%s*(.-)%s*$', '%1')
     volume.value = tonumber(value)
     volume_text.markup = helpers.colorize_text(value .. "%", beautiful.fg_color)
@@ -126,7 +126,7 @@ end)
 volume:connect_signal("property::value", function(_, new_value)
     volume_text.markup = helpers.colorize_text(new_value .. "%", beautiful.fg_color)
     volume.value = new_value
-    awful.spawn("amixer -D pulse set Master " .. new_value .."%", false)
+    awful.spawn("pamixer --set-volume " .. new_value .." --allow-boost", false)
 end)
 
 
