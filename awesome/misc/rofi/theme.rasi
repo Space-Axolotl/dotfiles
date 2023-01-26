@@ -25,6 +25,7 @@ configuration {
 // window properties
 window {
     transparency:                   "real";
+    fullscreen:                     false;
     background-color:               @background;
     text-color:                     @foreground;
 	border:							0px;

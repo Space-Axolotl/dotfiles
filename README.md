@@ -10,6 +10,7 @@
     - [1. Install yay](#1-install-yay)
     - [2. Install required packages](#2-install-required-packages)
     - [3. Setup symbolic links](#3-setup-symbolic-links)
+    - [X. Finishing touches](#x-finishing-touches)
 
 
 # Dotfiles
@@ -54,3 +55,6 @@ ln -s ~/dotfiles/config.fish ~/.config/fish/config.fish
 rm -rf ~/.config/awesome
 cp ~/dotfiles/awesome ~/.config
 ```
+
+### X. Finishing touches
+to enable a permament dark mode for chromium go to **chrome://flags** and search for *Auto Dark Mode for Web Contents* and set it to **Enabled**
