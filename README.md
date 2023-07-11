@@ -2,58 +2,58 @@
 ⚠ THIS REPOSITORY IS STILL WIP SO PLEASE DO NOT FOLLOW STEPS BELOW ⚠
 
 # Table of contents
-- [⚠ DISCLAIMER ⚠](#-disclaimer-)
-- [Table of contents](#table-of-contents)
-- [Dotfiles](#dotfiles)
-  - [Setup](#setup)
-    - [0. (multiple screens step) install nvidia tools](#0-multiple-screens-step-install-nvidia-tools)
-    - [1. Install yay](#1-install-yay)
-    - [2. Install required packages](#2-install-required-packages)
-    - [3. Setup symbolic links](#3-setup-symbolic-links)
-    - [X. Finishing touches](#x-finishing-touches)
+[TOC]
 
-
-# Dotfiles
+# The Config
 This repository is a colection of dotfiles for arch on desktop 
-## Setup
-### 0. (multiple screens step) install nvidia tools
-```
-sudo pacman -S nvidia nvidia-utils nvidia-settings
-```
-then adjust the monitors in nvidia-settings
 
+## Setup
+Starting with a fresh arch, install following packages:
+### 0. Pacman Packages
+```
+sddm 
+picom i3 i3blocks i3bar 
+zsh xplr neovim neofetch nano 
+dmenu wezterm 
+rust nodejs python 
+nvidia nvidia-settings nvidia-utils 
+git base-devel 
+nitrogen chromium pavucontrol nautilus inkscape 
+noto-fonts noto-fonts-cjk noto-fonts-emoji noto-fonts-extra
+```
+##### Aditionals (if u want to)
+```
+atop fcitx
+```
+#### After install chroot
+```
+systemctl enable NetworkManager.service
+systemctl enable sddm.service
+``` 
 ### 1. Install yay
 ```
-sudo pacman -S git base-devel
-cd /opt
-sudo git clone https://aur.archlinux.org/yay-git.git
-sudo chown -R spaceaxolotl:spaceaxolotl ./yay-git
+git clone https://aur.archlinux.org/yay-git.git
 cd yay-git
 makepkg -si
+cd ..
+rm -rf yay-git
 ```
-### 2. Install required packages
+#### Yay Packages
 ```
-yay -S picom-git awesome-git acpid git mpd ncmpcpp wmctrl \
-lxappearance gucharmap alacritty polkit-gnome \
-xdotool xclip scrot brightnessctl alsa-utils pulseaudio jq rofi \
-inotify-tools zsh mpdris2 acpi acpi_call \
-playerctl redshift cutefish-cursor-themes-git cutefish-icons upower xorg xorg-init tar
+blender discord obsidian spotify 
 ```
+## Dotfiles
 ```
-sudo pacman -S pavucontrol pamixer
+cd ~
+git clone (this repo link)
+cp ~/dotfiles/* ~/.config/*
+rm -rf dotfiles
 ```
-
-
-### 3. Setup symbolic links
+### Aditional Fonts
 ```
-rm ~/.config/alacritty/alacritty.yml
-ln -s ~/dotfiles/alacritty.yml ~/.config/alacritty/alacritty.yml
-
-rm ~/.config/fish/config.fish
-ln -s ~/dotfiles/config.fish ~/.config/fish/config.fish
-
-rm -rf ~/.config/awesome
-cp ~/dotfiles/awesome ~/.config
+https://www.programmingfonts.org/#fantasque-sans
+https://www.programmingfonts.org/#share-tech
+https://www.1001freefonts.com/zdyk-sagittarius.font
 ```
 
 ### X. Finishing touches
