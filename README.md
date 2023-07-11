@@ -46,8 +46,8 @@ blender discord obsidian spotify
 ```
 cd ~
 git clone (this repo link)
-cp ~/dotfiles/config/* ~/.config/*
-cp ~/dotfiles/main/* ~
+cp -r ~/dotfiles/config/* ~/.config/*
+cp -r ~/dotfiles/main/* ~
 rm -rf dotfiles
 ```
 ### Aditional Fonts
