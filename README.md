@@ -12,7 +12,7 @@ Starting with a fresh arch, install following packages:
 ### 0. Pacman Packages
 ```
 sddm 
-picom i3 i3blocks i3bar 
+picom i3 i3-blocks i3-bar i3-gaps 
 zsh xplr neovim neofetch nano 
 dmenu wezterm 
 rust nodejs python 
