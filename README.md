@@ -12,7 +12,7 @@ Starting with a fresh arch, install following packages:
 
 If you want to install all packages at once, run:
 ```
-sudo pacman -S sddm picom i3 i3blocks rofi nitrogen wezterm zsh xplr neovim neofetch nano catimg scrot rust nodejs python git base-devel github-cli nvidia nvidia-settings nvidia-utils nitrogen chromium pavucontrol nautilus inkscape geeqie noto-fonts noto-fonts-cjk noto-fonts-emoji noto-fonts-extra
+sudo pacman -S sddm picom i3 i3blocks rofi nitrogen wezterm zsh xplr neovim neofetch nano catimg scrot rust nodejs python git base-devel github-cli nvidia nvidia-settings nvidia-utils nitrogen chromium pavucontrol nautilus inkscape geeqie noto-fonts noto-fonts-cjk noto-fonts-emoji noto-fonts-extra qt5-graphicaleffects
 ```
 In the case you want to install only a selection of those packages below you will find packages you can install with descriptions
 <details>
