@@ -97,5 +97,5 @@ plugins=(
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-source /home/sapceaxolotl/.oh-my-zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source /home/sapceaxolotl/.oh-my-zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+source /home/sapceaxolotl/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /home/sapceaxolotl/.oh-my-zsh/custom/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
