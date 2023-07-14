@@ -1,9 +1,6 @@
 # ⚠ DISCLAIMER ⚠
 ⚠ THIS REPOSITORY IS STILL WIP SO PLEASE DO NOT FOLLOW STEPS BELOW ⚠
 
-# Table of contents
-[TOC]
-
 # Showcase 
 (description of what this is supposed to be)
 (whoami and what I am doing with this sistem / what it was designed for)
