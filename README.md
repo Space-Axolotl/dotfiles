@@ -24,11 +24,11 @@ In the case you want to install only a selection of those packages below you wil
   sudo pacman -S sddm picom i3 i3-blocks i3-bar i3-gaps rofi nitrogen 
   ```
   terminal and cli tools
-  ```bash
+  ```sh
   sudo pacman -S wezterm zsh xplr neovim neofetch nano catimg scrot
   ```
   programming languages
-  ```bash
+  ```sh
   sudo pacman -S rust nodejs python 
   ```
   git and development packages
@@ -48,10 +48,11 @@ In the case you want to install only a selection of those packages below you wil
   noto-fonts noto-fonts-cjk noto-fonts-emoji noto-fonts-extra
   ```
   #### Aditionals (if u want to)
-  ```bash
+  ```sh
   btop fcitx
   ```
 </details>
+
 ### After install chroot
 ```
 systemctl enable NetworkManager.service
