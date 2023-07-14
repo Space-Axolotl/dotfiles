@@ -9,20 +9,48 @@
 # Setup
 Starting with a fresh arch, install following packages:
 ## 0. Pacman Packages
+
+If you want to install all packages at once, run:
 ```
-sddm picom i3 i3-blocks i3-bar i3-gaps 
-zsh xplr neovim neofetch nano catimg
-rofi wezterm 
-rust nodejs python 
-nvidia nvidia-settings nvidia-utils 
-git base-devel github-cli
-nitrogen chromium pavucontrol nautilus inkscape geeqie scrot 
-noto-fonts noto-fonts-cjk noto-fonts-emoji noto-fonts-extra
+sudo pacman -S sddm picom i3 i3-blocks i3-bar i3-gaps rofi nitrogen wezterm zsh xplr neovim neofetch nano catimg scrot rust nodejs python git base-devel github-cli nvidia nvidia-settings nvidia-utils nitrogen chromium pavucontrol nautilus inkscape geeqie noto-fonts noto-fonts-cjk noto-fonts-emoji noto-fonts-extra
+
 ```
-#### Aditionals (if u want to)
-```
-btop fcitx
-```
+In the case you want to install only a selection of those packages below you will find packages you can install with descriptions
+<details>
+  <summary>Click me</summary>
+  gui packages
+  ```sh
+  sudo pacman -S sddm picom i3 i3-blocks i3-bar i3-gaps rofi nitrogen 
+  ```
+  terminal and cli tools
+  ```bash
+  sudo pacman -S wezterm zsh xplr neovim neofetch nano catimg scrot
+  ```
+  programming languages
+  ```bash
+  sudo pacman -S rust nodejs python 
+  ```
+  git and development packages
+  ```sh
+  sudo pacman -S git base-devel github-cli
+  ```
+  nvidia utils
+  ```sh
+  nvidia nvidia-settings nvidia-utils 
+  ```
+  gui tools
+  ```sh
+  nitrogen chromium pavucontrol nautilus inkscape geeqie
+  ```
+  fonts
+  ```sh
+  noto-fonts noto-fonts-cjk noto-fonts-emoji noto-fonts-extra
+  ```
+  #### Aditionals (if u want to)
+  ```bash
+  btop fcitx
+  ```
+</details>
 ### After install chroot
 ```
 systemctl enable NetworkManager.service
