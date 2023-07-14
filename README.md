@@ -36,19 +36,19 @@ In the case you want to install only a selection of those packages below you wil
   ```
   nvidia utils
   ```sh
-  nvidia nvidia-settings nvidia-utils 
+  sudo pacman -S nvidia nvidia-settings nvidia-utils 
   ```
   gui tools
   ```sh
-  nitrogen chromium pavucontrol nautilus inkscape geeqie
+  sudo pacman -S nitrogen chromium pavucontrol nautilus inkscape geeqie
   ```
   fonts
   ```sh
-  noto-fonts noto-fonts-cjk noto-fonts-emoji noto-fonts-extra
+  sudo pacman -S noto-fonts noto-fonts-cjk noto-fonts-emoji noto-fonts-extra
   ```
   #### Aditionals (if u want to)
   ```sh
-  btop fcitx
+  sudo pacman -S btop fcitx
   ```
 </details>
 
@@ -67,7 +67,7 @@ rm -rf yay-git
 ```
 ### Yay Packages
 ```
-blender discord obsidian spotify 
+yay -S blender discord obsidian spotify 
 ```
 ## 2. Dotfiles
 ```
@@ -83,6 +83,7 @@ rm -rf dotfiles
 https://www.programmingfonts.org/#fantasque-sans
 https://www.programmingfonts.org/#share-tech
 https://www.1001freefonts.com/zdyk-sagittarius.font
+https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.2/NerdFontsSymbolsOnly.zip
 ```
 Download them and then move them to the font directory:
 ```
