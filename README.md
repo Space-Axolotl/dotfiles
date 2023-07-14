@@ -4,33 +4,34 @@
 # Table of contents
 [TOC]
 
-# The Config
-This repository is a colection of dotfiles for arch on desktop 
-
-## Setup
+# Showcase 
+(description of what this is supposed to be)
+(whoami and what I am doing with this sistem / what it was designed for)
+(how it was built / what core packages is it using)
+(photo/s)
+# Setup
 Starting with a fresh arch, install following packages:
-### 0. Pacman Packages
+## 0. Pacman Packages
 ```
-sddm 
-picom i3 i3-blocks i3-bar i3-gaps 
-zsh xplr neovim neofetch nano 
-dmenu wezterm 
+sddm picom i3 i3-blocks i3-bar i3-gaps 
+zsh xplr neovim neofetch nano catimg
+rofi wezterm 
 rust nodejs python 
 nvidia nvidia-settings nvidia-utils 
-git base-devel 
-nitrogen chromium pavucontrol nautilus inkscape 
+git base-devel github-cli
+nitrogen chromium pavucontrol nautilus inkscape geeqie scrot 
 noto-fonts noto-fonts-cjk noto-fonts-emoji noto-fonts-extra
 ```
-##### Aditionals (if u want to)
+#### Aditionals (if u want to)
 ```
-atop fcitx
+btop fcitx
 ```
-#### After install chroot
+### After install chroot
 ```
 systemctl enable NetworkManager.service
 systemctl enable sddm.service
 ``` 
-### 1. Install yay
+## 1. Install yay
 ```
 git clone https://aur.archlinux.org/yay-git.git
 cd yay-git
@@ -38,11 +39,11 @@ makepkg -si
 cd ..
 rm -rf yay-git
 ```
-#### Yay Packages
+### Yay Packages
 ```
 blender discord obsidian spotify 
 ```
-## Dotfiles
+## 2. Dotfiles
 ```
 cd ~
 git clone (this repo link)
@@ -56,6 +57,9 @@ https://www.programmingfonts.org/#fantasque-sans
 https://www.programmingfonts.org/#share-tech
 https://www.1001freefonts.com/zdyk-sagittarius.font
 ```
-
+Download them and then move them to the font directory:
+```
+mv ~/Downloads/<font-name> ~/.fonts/ 
+```
 ### X. Finishing touches
 to enable a permament dark mode for chromium go to **chrome://flags** and search for *Auto Dark Mode for Web Contents* and set it to **Enabled**
