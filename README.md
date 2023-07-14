@@ -70,6 +70,11 @@ rm -rf yay-git
 yay -S blender discord obsidian spotify 
 ```
 ## 2. Dotfiles
+before you do anything change your shell to zsh by:
+```
+chsh -s /bin/zsh
+```
+
 ```
 cd ~
 git clone https://github.com/thanxolotl/dotfiles.git
