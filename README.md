@@ -12,8 +12,7 @@ Starting with a fresh arch, install following packages:
 
 If you want to install all packages at once, run:
 ```
-sudo pacman -S sddm picom i3 i3-blocks i3-bar i3-gaps rofi nitrogen wezterm zsh xplr neovim neofetch nano catimg scrot rust nodejs python git base-devel github-cli nvidia nvidia-settings nvidia-utils nitrogen chromium pavucontrol nautilus inkscape geeqie noto-fonts noto-fonts-cjk noto-fonts-emoji noto-fonts-extra
-
+sudo pacman -S sddm picom i3 i3blocks rofi nitrogen wezterm zsh xplr neovim neofetch nano catimg scrot rust nodejs python git base-devel github-cli nvidia nvidia-settings nvidia-utils nitrogen chromium pavucontrol nautilus inkscape geeqie noto-fonts noto-fonts-cjk noto-fonts-emoji noto-fonts-extra
 ```
 In the case you want to install only a selection of those packages below you will find packages you can install with descriptions
 <details>
@@ -21,7 +20,7 @@ In the case you want to install only a selection of those packages below you wil
 
   gui packages
   ```sh
-  sudo pacman -S sddm picom i3 i3-blocks i3-bar i3-gaps rofi nitrogen 
+  sudo pacman -S sddm picom i3 i3blocks rofi nitrogen 
   ```
   terminal and cli tools
   ```sh
@@ -73,9 +72,10 @@ blender discord obsidian spotify
 ## 2. Dotfiles
 ```
 cd ~
-git clone (this repo link)
-cp -r ~/dotfiles/config/* ~/.config/*
-cp -r ~/dotfiles/main/* ~
+git clone https://github.com/thanxolotl/dotfiles.git
+cd dotfiles
+./install
+cd ..
 rm -rf dotfiles
 ```
 ### Aditional Fonts
