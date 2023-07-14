@@ -18,6 +18,7 @@ sudo pacman -S sddm picom i3 i3-blocks i3-bar i3-gaps rofi nitrogen wezterm zsh 
 In the case you want to install only a selection of those packages below you will find packages you can install with descriptions
 <details>
   <summary>Click me</summary>
+
   gui packages
   ```sh
   sudo pacman -S sddm picom i3 i3-blocks i3-bar i3-gaps rofi nitrogen 
