@@ -8,20 +8,17 @@
 (photo/s)
 # Setup
 Starting with a fresh arch, install following packages:
-## 0. Pacman Packages
-
-If you want to install all packages at once, run:
-```
-sudo pacman -S i3 picom ly rofi nitrogen wezterm zsh xplr neovim neofetch catimg scrot rust nodejs python git base-devel github-cli nvidia nvidia-settings nvidia-utils nitrogen chromium pavucontrol nautilus inkscape geeqie noto-fonts noto-fonts-cjk noto-fonts-emoji noto-fonts-extra 
-```
-
-### After chroot
+## 1. Atfer fresh install
 ```
 arch-chroot /mnt
 systemctl enable NetworkManager.service
+systemctl enable ly.service
 ```
-
-## 1. Install yay
+To install all the pacman packages at once, run:
+```
+sudo pacman -S i3 picom ly rofi nitrogen wezterm zsh xplr neovim neofetch catimg scrot rust nodejs python git base-devel github-cli nvidia nvidia-settings nvidia-utils nitrogen chromium pavucontrol nautilus inkscape geeqie noto-fonts noto-fonts-cjk noto-fonts-emoji noto-fonts-extra 
+```
+## 2. Install yay
 ```
 git clone https://aur.archlinux.org/yay-git.git
 cd yay-git
@@ -29,16 +26,15 @@ makepkg -si
 cd ..
 rm -rf yay-git
 ```
-### Yay Packages
+### Install yay packages
 ```
 yay -S blender discord spotify
 ```
-## 2. Dotfiles
+## 2. Installing the dotfiles
 before you do anything change your shell to zsh by:
 ```
 chsh -s /bin/zsh
 ```
-
 ```
 cd ~
 git clone https://github.com/thanxolotl/dotfiles.git
