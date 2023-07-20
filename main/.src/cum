@@ -2,6 +2,6 @@
 
 BIGCUM="$HOME/.local/bin"
 
-selection="$(find "$BIGCUM" -not -path "$BIGCUM" -printf "%f\n" -type f | rofi -dmenu -p)"
+selection="$(find "$BIGCUM" -not -path "$BIGCUM" -printf "%f\n" -type f | rofi -dmenu -p "Run : ")"
 
 exec "$BIGCUM/$selection"
