@@ -12,7 +12,7 @@ Starting with a fresh arch, install following packages:
 
 If you want to install all packages at once, run:
 ```
-sudo pacman -S sddm picom i3 i3blocks rofi nitrogen wezterm zsh xplr neovim neofetch nano catimg scrot rust nodejs python git base-devel github-cli nvidia nvidia-settings nvidia-utils nitrogen chromium pavucontrol nautilus inkscape geeqie noto-fonts noto-fonts-cjk noto-fonts-emoji noto-fonts-extra qt5-graphicaleffects
+sudo pacman -S rofi nitrogen wezterm zsh xplr neovim neofetch catimg scrot rust nodejs python git base-devel github-cli nvidia nvidia-settings nvidia-utils nitrogen chromium pavucontrol nautilus inkscape geeqie noto-fonts noto-fonts-cjk noto-fonts-emoji noto-fonts-extra 
 ```
 In the case you want to install only a selection of those packages below you will find packages you can install with descriptions
 <details>
@@ -20,7 +20,7 @@ In the case you want to install only a selection of those packages below you wil
 
   gui packages
   ```sh
-  sudo pacman -S sddm picom i3 i3blocks rofi nitrogen 
+  sudo pacman -S sway rofi nitrogen
   ```
   terminal and cli tools
   ```sh
@@ -28,7 +28,7 @@ In the case you want to install only a selection of those packages below you wil
   ```
   programming languages
   ```sh
-  sudo pacman -S rust nodejs python 
+  sudo pacman -S rust nodejs python
   ```
   git and development packages
   ```sh
@@ -36,7 +36,7 @@ In the case you want to install only a selection of those packages below you wil
   ```
   nvidia utils
   ```sh
-  sudo pacman -S nvidia nvidia-settings nvidia-utils 
+  sudo pacman -S nvidia nvidia-settings nvidia-utils
   ```
   gui tools
   ```sh
@@ -55,8 +55,8 @@ In the case you want to install only a selection of those packages below you wil
 ### After install chroot
 ```
 systemctl enable NetworkManager.service
-systemctl enable sddm.service
-``` 
+```
+
 ## 1. Install yay
 ```
 git clone https://aur.archlinux.org/yay-git.git
@@ -67,7 +67,7 @@ rm -rf yay-git
 ```
 ### Yay Packages
 ```
-yay -S blender discord obsidian spotify 
+yay -S blender discord obsidian spotify
 ```
 ## 2. Dotfiles
 before you do anything change your shell to zsh by:
@@ -92,7 +92,7 @@ https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.2/NerdFontsSymbol
 ```
 Download them and then move them to the font directory:
 ```
-mv ~/Downloads/<font-name> ~/.fonts/ 
+mv ~/Downloads/<font-name> ~/.fonts/
 ```
 ### X. Finishing touches
 to enable a permament dark mode for chromium go to **chrome://flags** and search for *Auto Dark Mode for Web Contents* and set it to **Enabled**
